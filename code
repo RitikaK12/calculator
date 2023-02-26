@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+char oper;
+float num1, num2;
+
+cout<<"enter the operator +,-,*,/ \n";
+cin>>oper;
+
+cout<<"enter the 1st operand \n";
+cin>>num1;
+cout<<"enter the 2nd operand \n";
+cin>>num2;
+
+// switch case begin
+
+switch(oper){
+ case '+':
+cout<<num1+num2<<endl;
+break;
+
+case '-':
+cout<<num1-num2<<endl;
+break;
+
+case '*':
+cout<<num1*num2<<endl;
+break;
+
+case '/':
+cout<<num1/num2<<endl;
+break;
+
+default:
+cout<<"invalid";
+break;
+}
+return 0;
+}
